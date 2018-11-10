@@ -44,4 +44,7 @@ with open(filepath, "w") as outfile:
             if doneCount % doneInterval == 0:
                 log.info(doneCount)
 
-            queue_service.delete_message(config['queueName'], message.id, message.pop_receipt)
+            try:
+                queue_service.delete_message(config['queueName'], message.id, message.pop_receipt)
+            except Exception:
+                log.info("Failed to delete: " + message.id)
