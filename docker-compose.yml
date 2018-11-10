@@ -7,3 +7,4 @@ services:
       - /data-export/output:/data-export/output
     working_dir: /usr/local/app
     command: python consumer.py
+    restart: on-failure
