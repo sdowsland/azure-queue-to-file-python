@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: azure-queue-to-file
+    image: azure-queue-to-file-python
     volumes:
       - ./:/usr/local/app
       - /data-export/output:/data-export/output
