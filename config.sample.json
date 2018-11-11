@@ -1,0 +1,7 @@
+{
+    "accountName": "accountName",
+    "accountKey": "accountKey",
+    "queueName": "queueName",
+    "producerCount": 10,
+    "dataDirectory": "output"
+}
