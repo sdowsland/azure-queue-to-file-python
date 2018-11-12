@@ -4,7 +4,7 @@
     "queueName": "queueName",
     "producerCount": 10,
     "dataDirectory": "output",
-    "check_uploaded": {
+    "checkUploaded": {
         "accountName": "",
         "accountKey": "",
         "container": "",
