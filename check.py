@@ -34,4 +34,4 @@ for file in onlyfiles:
         log.info("{} is not in blob store".format(file))
     else:
         blob_obj = blob_service.get_blob_properties(config['checkUploaded']['container'], destination_path + "/" + file)
-        print(blob_obj.properties.content_settings.content_md5)
+        print({'md5': blob_obj.properties.content_settings.content_md5, 'name': file})
