@@ -3,5 +3,12 @@
     "accountKey": "accountKey",
     "queueName": "queueName",
     "producerCount": 10,
-    "dataDirectory": "output"
+    "dataDirectory": "output",
+    "check_uploaded": {
+        "accountName": "",
+        "accountKey": "",
+        "container": "",
+        "sourcePath": "output",
+        "destinationPath": "batch-1"
+    }
 }
