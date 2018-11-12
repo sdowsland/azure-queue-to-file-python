@@ -32,3 +32,6 @@ for file in onlyfiles:
 
     if blob_service.exists(config['checkUploaded']['container'], destination_path + "/" + file) == False:
         log.info("{} is not in blob store".format(file))
+    else:
+        blob_obj = blob_service.get_blob_properties(config['checkUploaded']['container'], destination_path + "/" + file)
+        print(blob_obj.metadata)
